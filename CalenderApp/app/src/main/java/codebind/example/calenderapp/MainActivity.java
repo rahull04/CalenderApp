@@ -267,6 +267,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 currentMonth=11;
             }
             mainTable.removeAllViews();
+            infoLayout.setVisibility(View.GONE);
             setCalender();
 
         }if(view.getId()==R.id.rightbtn){ //Previous month
@@ -275,6 +276,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 currentMonth=0;
             }
             mainTable.removeAllViews();
+            infoLayout.setVisibility(View.GONE);
             setCalender();
         }if(view.getId()==R.id.info_title){
             //If there is an event on day show info about event
